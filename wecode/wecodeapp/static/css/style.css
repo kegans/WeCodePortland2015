@@ -1,0 +1,39 @@
+section img {
+    width: 100%;
+    padding: 0 20px 20px 20px;
+}
+h1, h2, h3 {
+    font-family: 'Bad Script', cursive;
+    font-weight: bold;
+    color: rgb(110, 108, 153);
+    padding: 10px 20px 0 20px;
+}
+p {
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.2em;
+    padding: 5px 20px;
+    color: rgb(97, 95, 90);
+    font-weight: 800;
+}
+h1 {
+    font-size: 4em;
+    padding: 20px 0 0 0;
+}
+h2 {
+    font-size: 3em;
+}
+body {
+    background: rgb(97, 95, 90);
+}
+
+.container {
+    background: #fafafa;
+    margin-top: 20px;
+}
+
+header,
+footer.container {
+    background-color: rgb(215, 223, 34);
+    min-height: 150px;
+    margin-top: 0;
+}

@@ -11,7 +11,7 @@ https://docs.djangoproject.com/en/1.8/ref/settings/
 """
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
-import os
+import os, sys
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
@@ -96,8 +96,12 @@ USE_L10N = True
 
 USE_TZ = True
 
-
+PROJECT_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+sys.path.append(os.path.join(PROJECT_ROOT, 'wecodeapp/'))
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.8/howto/static-files/
-
+# static resources related. See documentation at: http://docs.djangoproject.com/en/dev/ref/contrib/staticfiles/
+STATIC_ROOT = ''
 STATIC_URL = '/static/'
+PROJECT_DIR = os.path.dirname(__file__)
+TEMPLATE_DIRS = (      os.path.join(PROJECT_DIR, '../templates'),)
