@@ -8,3 +8,6 @@ urlpatterns = [
     url(r'', include('wecodeapp.urls')),
     url(r'^admin/', include(admin.site.urls)),
 ]
+
+
+### testing that it ignores the .pyc
